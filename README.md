@@ -1,0 +1,9 @@
+# SegmentTableView
+在主TableView的cell中嵌套分页控件，分页控件中是子TableView，主、子tableView流畅滚动
+
+基本思路：
+（1）将多个子tableView放在主tableView的一个cell中，用分页控件包装起来；（也可以直接用scrollview来实现，都可以）；
+（2）使用delegate来关联主tableView和子tableView中的scrollViewDidScroll事件，以便将所有的滚动控制都放到那个分页cell中；
+（3）让主tableView继承UIGestureRecognizerDelegate协议并实现gestureRecognizer接口，用于在滚动内层子tableView的同时，也同时触发主tableView的scrollViewDidScroll:事件；
+（4）控制主tableView和子tableView在scrollViewDidScroll事件触发后，两个tableView的正确绘制位置；
+
