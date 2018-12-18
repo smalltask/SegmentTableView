@@ -1,5 +1,5 @@
 # SegmentTableView
-在主TableView的cell中嵌套分页控件，分页控件中是子TableView，主、子tableView流畅滚动
+在 *主TableView* 的cell中嵌套分页控件，分页控件中是 *子TableView*，主、子tableView流畅滚动
 
 基本思路：
 
